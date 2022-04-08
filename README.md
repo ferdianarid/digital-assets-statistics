@@ -9,7 +9,7 @@ Use react query for querying data from Assets Digital API. And also for mutating
 
 ### After loading, user automatically redirect to coin pages
 
-<img src="https://raw.githubusercontent.com/ferdianar/digital-assets-statistics/master/loading.png" alt="coin" />
+<img src="https://raw.githubusercontent.com/ferdianar/digital-assets-statistics/master/digitalassets.png" alt="coin" />
 
 
 First, run the development server:
