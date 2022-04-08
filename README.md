@@ -1,5 +1,5 @@
-## Coins Market using Next.js and React Query
-Use react query for querying data from Coin API. And also for mutating data.
+## Digital Assets using Next.js and React Query
+Use react query for querying data from Assets Digital API. And also for mutating data.
 
 First, run the development server:
 
