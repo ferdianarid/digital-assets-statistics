@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import {
   Box,
   Text,
@@ -15,9 +16,9 @@ import { FcBullish, FcAddDatabase } from "react-icons/fc";
 import { useRouter } from "next/router";
 
 const App = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AutoRedirect()
-  })
+  }, [])
   const router = useRouter()
   const AutoRedirect = () => {
     setTimeout(() => {
