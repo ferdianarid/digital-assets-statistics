@@ -125,9 +125,9 @@ export default function Market() {
                            <Flex alignItems="center">
                               <Image
                                  src={coinData.image}
+                                 alt={"images"}
                                  boxSize="24px"
                                  ignoreFallback={true}
-                                 alt="images"
                               />
 
                               <Text pl={2} fontWeight="bold" textTransform="capitalize">

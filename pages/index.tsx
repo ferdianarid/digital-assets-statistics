@@ -17,7 +17,7 @@ import { useRouter } from "next/router";
 const App = () => {
   React.useEffect(() => {
     AutoRedirect()
-  }, [])
+  })
   const router = useRouter()
   const AutoRedirect = () => {
     setTimeout(() => {
