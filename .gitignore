@@ -6,7 +6,7 @@
 .pnp.js
 
 # config api
-configapis.ts
+# configapis.ts
 
 # testing
 /coverage

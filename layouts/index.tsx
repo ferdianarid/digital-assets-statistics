@@ -32,7 +32,7 @@ const Layout = ({
          <meta charSet="utf-8" />
          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Container px={100} maxW={{ xl: "1200px" }} h="100vh">
+      <Container px={30} maxW={{ xl: "1200px" }} h="100vh">
          <Flex pt={10} pb={24}>
             <Box>
                <Heading>{title}</Heading>
