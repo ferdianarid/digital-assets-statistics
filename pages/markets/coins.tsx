@@ -97,7 +97,7 @@ export default function Market() {
       // initialData: initialCoinMarket
    })
    return (
-      <Layout title="Crypto Market" subTitle="Cryptocurrency Recent Market Statistics">
+      <Layout title="Digital Assets" subTitle="Digital Assets Realtime Statistics">
          {
             isFetching && (
                <Spinner color="blue.700" position="fixed" top={10} right={10} />

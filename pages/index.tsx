@@ -12,23 +12,38 @@ import NextLink from "next/link";
 import { Logo } from "assets/Logo";
 import { ColorSwitcher } from "layouts/ColorSwitcher";
 import { FcBullish, FcAddDatabase } from "react-icons/fc";
-const App = () => (
-  <Box textAlign="center" fontSize="xl">
-    <Grid minH="50vh" p={3}>
-      <ColorSwitcher justifySelf="flex-end" />
-      <VStack spacing={8}>
-        <Logo h="15vmin" pointerEvents="none" />
-        <Text fontSize="6xl" fontWeight="900">
-          Coins Market
-        </Text>
-        <SimpleGrid
-          columns={2}
-          spacing="8"
-          p="10"
-          textAlign="center"
-          rounded="lg"
-        >
-          <NextLink href="markets/coins" passHref>
+import { useRouter } from "next/router";
+
+const App = () => {
+  React.useEffect(() => {
+    AutoRedirect()
+  }, [])
+  const router = useRouter()
+  const AutoRedirect = () => {
+    setTimeout(() => {
+      router.push("/markets/coins")
+    }, 2000)
+  }
+  return (
+    <Box textAlign="center" fontSize="xl">
+      <Grid minH="50vh" p={3}>
+        <ColorSwitcher justifySelf="flex-end" />
+        <VStack spacing={8}>
+          <Logo h="15vmin" pointerEvents="none" />
+          <Text fontSize="6xl" fontWeight="900">
+            Loading ...
+          </Text>
+          <Text fontSize="xl" fontWeight="600">
+            You will redirected automatically ...
+          </Text>
+          <SimpleGrid
+            columns={2}
+            spacing="8"
+            p="10"
+            textAlign="center"
+            rounded="lg"
+          >
+            {/* <NextLink href="markets/coins" passHref>
             <Box
               boxShadow="xs"
               p="6"
@@ -48,9 +63,9 @@ const App = () => (
                 Crypto Market
               </Link>
             </Box>
-          </NextLink>
+          </NextLink> */}
 
-          <NextLink href="sales" passHref>
+            {/* <NextLink href="sales" passHref>
             <Box
               boxShadow="xs"
               p="6"
@@ -70,11 +85,12 @@ const App = () => (
                 Coins Market
               </Link>
             </Box>
-          </NextLink>
-        </SimpleGrid>
-      </VStack>
-    </Grid>
-  </Box>
-);
+          </NextLink> */}
+          </SimpleGrid>
+        </VStack>
+      </Grid>
+    </Box>
+  )
+};
 
 export default App;
