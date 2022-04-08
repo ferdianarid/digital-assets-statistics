@@ -1,6 +1,17 @@
 ## Digital Assets using Next.js and React Query
 Use react query for querying data from Assets Digital API. And also for mutating data.
 
+
+### Before see the crypto statistics, user stay on homepage, waiting redirect automatic
+
+<img src="https://raw.githubusercontent.com/ferdianar/digital-assets-statistics/master/loading.png" alt="image" />
+
+
+### After loading, user automatically redirect to coin pages
+
+<img src="https://raw.githubusercontent.com/ferdianar/digital-assets-statistics/master/loading.png" alt="coin" />
+
+
 First, run the development server:
 
 ```bash
