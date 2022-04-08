@@ -120,13 +120,14 @@ export default function Market() {
                {isError && <Text>Error Request</Text>}
                {
                   isSuccess && data?.map((coinData: IMarketCoins) => (
-                     <Tr id={coinData.id}>
+                     <Tr key={coinData.id} id={coinData.id}>
                         <Td>
                            <Flex alignItems="center">
                               <Image
                                  src={coinData.image}
                                  boxSize="24px"
                                  ignoreFallback={true}
+                                 alt="images"
                               />
 
                               <Text pl={2} fontWeight="bold" textTransform="capitalize">
